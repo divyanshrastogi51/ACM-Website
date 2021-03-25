@@ -8,6 +8,9 @@
   font-family: "Josefin Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: #326f92;
 }
@@ -160,4 +163,8 @@ body {
   border-top: 1px solid black;
   margin-top: 5px;
   margin-bottom: 10px;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
