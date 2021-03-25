@@ -32,17 +32,6 @@ body {
   padding-top: 70px;
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .nav {
   background-color: black;
   color: aliceblue;
@@ -126,11 +115,14 @@ body {
 
 @media only screen and (max-width: 600px) {
   .home {
-    background: #326f92;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
     display: flex;
     justify-content: center;
     min-height: 60vh;
     height: 60vh;
+    padding-top: 50px;
   }
   .home-title {
     font-size: 2rem;
@@ -147,9 +139,25 @@ body {
     margin: auto;
   }
 }
-
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .form {
   display: flex;
   justify-content: center;
   padding-bottom: 30px;
+}
+
+.hr {
+  border-top: 1px solid black;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }
