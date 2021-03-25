@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="javascript" href="script.js">
     <title>ACM LNMIIT STUDENT CHAPTER</title>
     <link rel = "icon" href = "./acmLogo-1.png" type = "image/x-icon">
 </head>
+
 <body>
+   
     <header id='header' class="text-blue-400 body-font nav">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-blue-200 mb-4 md:mb-0">
@@ -45,7 +50,7 @@
 
 
       <!--ABOUT_US?-->
-    <section id="aboutus">
+    <section id="aboutus" data-aos="flip-down">
       <div class="container mx-auto flex flex-wrap grid grid-cols-1 gap-2 md:grid-cols-2">
           <div class="flex flex-col text-center w-full mb-20 px-5 py-12">
             <h2 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">About</h2>
@@ -63,7 +68,7 @@
       </div>
     </section>
     <hr class="hr">
-     <section id="about">
+     <section id="about" data-aos="flip-right">
        <h2 class="sm:text-3xl text-2xl text-center font-medium title-font mb-4 text-gray-900">Meet Our Chapter's Faculty Mentor</h2>
       <div class="container mx-auto grid grid-cols-1 gap-2 px-7 py-10 md:grid-cols-2">
           <div class="">
@@ -81,7 +86,7 @@
       <hr class="hr">
     
 <!--TEAM-->
-<section id ='team' class="text-grey-200 body-font">
+<section id ='team' class="text-grey-200 body-font" data-aos="flip-right">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
@@ -175,7 +180,7 @@
   <!--TEAM?-->
 
   <!--GALLERY-->
-  <section id='gallery' class="text-gray-600 body-font">
+  <section id='gallery' class="text-gray-600 body-font" data-aos="flip-right">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="flex w-full mb-20 flex-wrap">
         <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4">GALLERY</h1>
@@ -211,7 +216,7 @@
 
 
 
-  <section id='contact' class="form">
+  <section id='contact' class="form" data-aos="flip-right">
   <div class="wrapper">
     <h2>Contact us</h2>
     <div id="error_message">
@@ -280,6 +285,8 @@
     </div>
   </footer>
   <!--FOOTER?-->
-
+  <script>
+  AOS.init();
+    </script>
 </body>
 </html>
