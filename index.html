@@ -6,6 +6,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="javascript" href="script.js">
@@ -14,6 +15,12 @@
 </head>
 
 <body>
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+  <div class="spinner">
+  
+</div>
+</div>
    
     <header id='header' class="text-blue-400 body-font nav">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -297,5 +304,16 @@
   <script>
   AOS.init();
     </script>
+    <script>
+$(document).ready(function() {
+//Preloader
+preloaderFadeOutTime = 5000;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+</script>
 </body>
 </html>
