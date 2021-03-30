@@ -223,11 +223,3 @@ img:hover {
 #about {
   min-height: 100vh;
 }
-
-img {
-  overflow: hidden;
-}
-
-#gallery {
-  overflow: hidden;
-}
