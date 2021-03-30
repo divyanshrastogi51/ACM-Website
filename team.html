@@ -6,6 +6,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="javascript" href="script.js">
@@ -14,6 +15,13 @@
 </head>
 
 <body>
+
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+  <div class="spinner">
+  
+</div>
+</div>
    
     <header id='header' class="text-blue-400 body-font nav">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -26,7 +34,12 @@
             <span class="ml-3 text-xl">ACM STUDENT CHAPTER, LNMIIT</span>
           </a>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href = './index.html' class="mr-5 hover:text-blue-200">HOME</a>          
+            <a href = './index.html#header' class="mr-5 hover:text-blue-200">HOME</a>
+            <a href = './index.html#aboutus' class="mr-5 hover:text-blue-200">ABOUT US</a>
+            <a href = './index.html#gallery' class="mr-5 hover:text-blue-200">GALLERY</a>
+            <a href = './index.html#membership' class="mr-5 hover:text-blue-200">MEMBERSHIP</a>
+            <a href = './team.html' class="mr-5 hover:text-blue-200">TEAM</a>            
+            <a href = './index.html#contact' class="mr-5 hover:text-blue-200">CONTACT US</a>          
           </nav>
           </button>
         </div>
@@ -44,7 +57,7 @@
       <div class="flex flex-wrap -m-2">
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/garvit.jpg">
             <div class="flex-grow">
               <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
               <p class="text-blue-100">Chairperson</p>
@@ -64,10 +77,90 @@
         </div>
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/harshit.jpg">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
-              <p class="text-blue-100">Chairperson</p>
+              <h2 class="text-gray-900 title-font font-medium">Harshit Malhotra</h2>
+              <p class="text-blue-100">Secretary</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Parth-min.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Parth Gaur</h2>
+              <p class="text-blue-100">Vice-Chairperson</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/mehul.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Mehul Khandelwal</h2>
+              <p class="text-blue-100">Treasurer</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Aishani_Shrivastava_y18_crop.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Aishani Shrivastava</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Aman Jain-min.jpeg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Aman Jain </h2>
+              <p class="text-blue-100">Core Council Member</p>
               <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                   <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
                     <i class="fa fa-github w-5 h-5"></i>
@@ -86,8 +179,8 @@
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
             <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
-              <p class="text-blue-100">Chairperson</p>
+              <h2 class="text-gray-900 title-font font-medium">Harshita Dhingra</h2>
+              <p class="text-blue-100">Core Council Member</p>
               <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                   <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
                     <i class="fa fa-github w-5 h-5"></i>
@@ -103,11 +196,351 @@
           </div>
         </div>
         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/prakhar.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Prakhar Sharma</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/ramit.png">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Ramit Agarwal</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/toshi.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Toshi Mudgal</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/AashitaAgarwal_19ucs160-min.jpeg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Aashita Agarwal</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Abhishek Tiwari-min.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Abhishek Tiwari</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/akshat_chopra-min.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Akshat Chopra</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Ansh_Jain-min.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Ansh Jain</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Divyansh Rastogi-min.jpeg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Divyansh Rastogi</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Jitendra_Garg-min.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Jitendra Garg</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Raghav_Sharma-min.jpeg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Raghav Sharma </h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/rahul_agarwal-min.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Rahul Agarwal</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Sagar_19ucs199-min.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Sagar Maheshwari</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Sirisha_-min.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Sirisha Baweja</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/SnehaJain-min.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Sneha Jain </h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/soumya_goyal-min.jpeg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Soumya Goyal</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Srajit Jain-min.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Srajit Jain</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Tanay Khandelwal-min.jpg">
+            <div class="flex-grow">
+              <h2 class="text-gray-900 title-font font-medium">Tanay Khandelwal</h2>
+              <p class="text-blue-100">Core Council Member</p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-github w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-linkedin w-5 h-5"></i>
+                  </a>
+                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+                    <i class="fa fa-facebook w-5 h-5"></i>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </div>
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
             <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
-              <p class="text-blue-100">Chairperson</p>
+              <h2 class="text-gray-900 title-font font-medium">Vaishnavi Sharma</h2>
+              <p class="text-blue-100">Core Council Member</p>
               <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                   <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
                     <i class="fa fa-github w-5 h-5"></i>
@@ -122,12 +555,12 @@
             </div>
           </div>
         </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Vaibhav_Singhal-min.jpg">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
-              <p class="text-blue-100">Chairperson</p>
+              <h2 class="text-gray-900 title-font font-medium">Vaibhav Singhal</h2>
+              <p class="text-blue-100">Core Council Member</p>
               <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                   <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
                     <i class="fa fa-github w-5 h-5"></i>
@@ -142,12 +575,12 @@
             </div>
           </div>
         </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+         <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
           <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="./img/team/Vishal Gupta-min.jpeg">
             <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
-              <p class="text-blue-100">Chairperson</p>
+              <h2 class="text-gray-900 title-font font-medium">Vishal Gupta</h2>
+              <p class="text-blue-100">Core Council Member</p>
               <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
                   <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
                     <i class="fa fa-github w-5 h-5"></i>
@@ -162,199 +595,8 @@
             </div>
           </div>
         </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
-              <p class="text-blue-100">Chairperson</p>
-              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-github w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-linkedin w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-facebook w-5 h-5"></i>
-                  </a>
-                </span>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
-              <p class="text-blue-100">Chairperson</p>
-              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-github w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-linkedin w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-facebook w-5 h-5"></i>
-                  </a>
-                </span>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
-              <p class="text-blue-100">Chairperson</p>
-              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-github w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-linkedin w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-facebook w-5 h-5"></i>
-                  </a>
-                </span>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
-              <p class="text-blue-100">Chairperson</p>
-              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-github w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-linkedin w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-facebook w-5 h-5"></i>
-                  </a>
-                </span>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
-              <p class="text-blue-100">Chairperson</p>
-              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-github w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-linkedin w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-facebook w-5 h-5"></i>
-                  </a>
-                </span>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Garvit Gupta</h2>
-              <p class="text-blue-100">Chairperson</p>
-              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-github w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-linkedin w-5 h-5"></i>
-                  </a>
-                  <a class="ml-3 mt-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-                    <i class="fa fa-facebook w-5 h-5"></i>
-                  </a>
-                </span>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">NAme</h2>
-              <p class="text-blue-100">CTO</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/88x88">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Name</h2>
-              <p class="text-blue-100">Founder</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/90x90">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Name</h2>
-              <p class="text-blue-100">DevOps</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/94x94">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Name</h2>
-              <p class="text-blue-100">Software Engineer</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/98x98">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Name</h2>
-              <p class="text-blue-100">UX Researcher</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/100x90">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Name</h2>
-              <p class="text-blue-100">QA Engineer</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/104x94">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Name</h2>
-              <p class="text-blue-100">System</p>
-            </div>
-          </div>
-        </div>
-        <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
-          <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-            <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/108x98">
-            <div class="flex-grow">
-              <h2 class="text-gray-900 title-font font-medium">Name</h2>
-              <p class="text-blue-100">Product Manager</p>
-            </div>
-          </div>
-        </div>
+        
+       
       </div>
     </div>
   </section> 
@@ -372,36 +614,39 @@
 
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-        <a class="text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+        <a class="text-gray-900 hover:text-blue-200" target="_blank" href="https://www.facebook.com/lnmiitacm/">
           <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-          </svg>
-        </a>
-        <a class="ml-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
+        
+        <a class="ml-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://instagram.com/acm.lnmiit">
           <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
             <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
           </svg>
         </a>
-        <a class="ml-3 text-gray-900 hover:text-blue-200" target="_blank" href="https://example.com">
-          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-            <circle cx="4" cy="4" r="2" stroke="none"></circle>
-          </svg>
-        </a>
+        
       </span>
     </div>
-    <p class="text-gray-900">Developed by <a class="hover:text-blue-200" href="https://divyansh-rastogi.netlify.app/">Divyansh Rastogi</a></p>
+    <p class="text-gray-900 m-3">Developed by <a class="hover:text-blue-200" href="https://divyansh-rastogi.netlify.app/">Divyansh Rastogi</a></p>
   </footer>
 </div>
   <!--FOOTER?-->
   <script>
   AOS.init();
     </script>
+
+    <script>
+$(document).ready(function() {
+//Preloader
+preloaderFadeOutTime = 5000;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+</script>
 </body>
 </html>
